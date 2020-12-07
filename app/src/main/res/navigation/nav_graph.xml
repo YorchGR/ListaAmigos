@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listaAmigos">
+
+    <fragment
+        android:id="@+id/amigoInfo"
+        android:name="com.jorgelopezendrina.listaamigos.view.AmigoInfo"
+        android:label="fg_amigo_info"
+        tools:layout="@layout/fg_amigo_info" >
+        <action
+            android:id="@+id/ac_EditarvolverListaAmigos"
+            app:destination="@id/listaAmigos" />
+        <action
+            android:id="@+id/ac_volverEditarBorrarAmigo"
+            app:destination="@id/listaAmigos" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactoInfo"
+        android:name="com.jorgelopezendrina.listaamigos.view.ContactoInfo"
+        android:label="fg_contacto_info"
+        tools:layout="@layout/fg_contacto_info" >
+        <action
+            android:id="@+id/ac_importarVolverContacto"
+            app:destination="@id/listaAmigos" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaAmigos"
+        android:name="com.jorgelopezendrina.listaamigos.view.ListaAmigos"
+        android:label="fg_lista_amigos"
+        tools:layout="@layout/fg_lista_amigos" >
+        <action
+            android:id="@+id/ac_importarAmigos"
+            app:destination="@id/listaContactos" />
+        <action
+            android:id="@+id/ac_verLlamadas"
+            app:destination="@id/listaLlamadas" />
+        <action
+            android:id="@+id/ac_verAmigo"
+            app:destination="@id/amigoInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaContactos"
+        android:name="com.jorgelopezendrina.listaamigos.view.ListaContactos"
+        android:label="fg_lista_contactos"
+        tools:layout="@layout/fg_lista_contactos" >
+        <action
+            android:id="@+id/ac_verContacto"
+            app:destination="@id/contactoInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaLlamadas"
+        android:name="com.jorgelopezendrina.listaamigos.view.ListaLlamadas"
+        android:label="fg_lista_llamadas"
+        tools:layout="@layout/fg_lista_llamadas" >
+        <action
+            android:id="@+id/ac_volverListaLlamadas"
+            app:destination="@id/listaAmigos" />
+    </fragment>
+</navigation>

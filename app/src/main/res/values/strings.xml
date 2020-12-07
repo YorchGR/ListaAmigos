@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ListaAmigos</string>
+    <string name="importAmigos">Importar Amigos</string>
+    <string name="verllamadas">Ver Llamadas</string>
+    <string name="Listaamigos">LISTA DE AMIGOS</string>
+    <string name="listaContactos">LISTA DE CONTACTOS</string>
+    <string name="imgcontacto">ImagenContacto</string>
+    <string name="nombre">Nombre:</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="id">Id:</string>
+    <string name="fechNa">Fecha Nacimiento:</string>
+    <string name="importar">Importar como amigo</string>
+    <string name="volver">Volver</string>
+    <string name="tlf">Teléfono:</string>
+    <string name="NombreAmigo">Nombre</string>
+    <string name="FechNa">Fecha Nacimiento</string>
+    <string name="bteditar">Editar</string>
+    <string name="borrar">Borrar</string>
+    <string name="NumLlamadas">Número de llamadas:</string>
+    <string name="medalla">Medalla</string>
+    <string name="ListaLLamadas">LISTA DE LLAMADAS</string>
+    <string name="titulo_permiso">PERMISOS REQUERIDOS</string>
+    <string name="mensaje_permiso_requerido">Es necesario aceptar todos los permisos para hace rfuncionar la aplicación</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="fechaLlamada">Fecha de llamada</string>
+</resources>
