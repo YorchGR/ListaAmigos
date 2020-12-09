@@ -1,14 +1,18 @@
 package com.jorgelopezendrina.listaamigos.viewmodel;
 
+import android.app.Activity;
 import android.app.Application;
+import android.content.Context;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
-import com.jorgelopezendrina.listaamigos.mode.RepositorioAmigos;
-import com.jorgelopezendrina.listaamigos.mode.entity.Contacto;
-import com.jorgelopezendrina.listaamigos.mode.entity.Llamada;
-import com.jorgelopezendrina.listaamigos.mode.entity.LlamadasDeAmigo;
+
+import com.jorgelopezendrina.listaamigos.model.RepositorioAmigos;
+import com.jorgelopezendrina.listaamigos.model.entity.Contacto;
+import com.jorgelopezendrina.listaamigos.model.entity.Llamada;
+import com.jorgelopezendrina.listaamigos.model.entity.LlamadasDeAmigo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,14 +22,13 @@ import java.util.List;
  * aplicación y es el intermediario con el repositorio. La clase repositorio es el repositorio de
  * la base de datos.
  *
+ * @author Jorge López Endrina.
  * @contaco Objeto de la clase contacto.
  * @repositorioAmigos objeto de la clase repositorioAmigos.
  * @listaContactos objeto list que contiene objetos de la clase contacto
- * @tlf  variable String que va a contener el teléfono
+ * @tlf variable String que va a contener el teléfono
  * @contador variable long que va a contener el número de veces que un amigo en concreto nos ha
  * llamado
- *
- * @author Jorge López Endrina.
  */
 
 public class ViewModelListaAmigos extends AndroidViewModel {
@@ -56,8 +59,8 @@ public class ViewModelListaAmigos extends AndroidViewModel {
         return repositorioAmigos.getListaContactosLive();
     }
 
-    public List<Contacto> getListaContactos() {
-        return listaContactos;
+    public List<Contacto> getListaContactos(Context context) {
+        return repositorioAmigos.getListaContactosAux(context);
     }
 
     public LiveData<List<LlamadasDeAmigo>> getListaContadorLlamadas() {
@@ -68,7 +71,7 @@ public class ViewModelListaAmigos extends AndroidViewModel {
         return repositorioAmigos.getListaLlamadasLive();
     }
 
-    public  void getNum (String numtlf){
+    public void getNum(String numtlf) {
         tlf = numtlf;
     }
 
@@ -96,4 +99,6 @@ public class ViewModelListaAmigos extends AndroidViewModel {
         super(application);
         repositorioAmigos = new RepositorioAmigos(application);
     }
+
+
 }

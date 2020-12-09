@@ -1,4 +1,4 @@
-package com.jorgelopezendrina.listaamigos.mode.entity;
+package com.jorgelopezendrina.listaamigos.model.entity;
 
 import androidx.room.Embedded;
 

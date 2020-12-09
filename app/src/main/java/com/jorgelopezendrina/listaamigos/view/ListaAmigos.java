@@ -18,7 +18,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.jorgelopezendrina.listaamigos.R;
-import com.jorgelopezendrina.listaamigos.mode.entity.LlamadasDeAmigo;
+import com.jorgelopezendrina.listaamigos.model.entity.LlamadasDeAmigo;
 import com.jorgelopezendrina.listaamigos.view.adapter.RvAdaptarAmigos;
 import com.jorgelopezendrina.listaamigos.viewmodel.ViewModelListaAmigos;
 

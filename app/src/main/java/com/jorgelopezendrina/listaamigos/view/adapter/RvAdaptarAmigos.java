@@ -14,8 +14,8 @@ import androidx.navigation.NavController;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.jorgelopezendrina.listaamigos.R;
-import com.jorgelopezendrina.listaamigos.mode.entity.Contacto;
-import com.jorgelopezendrina.listaamigos.mode.entity.LlamadasDeAmigo;
+import com.jorgelopezendrina.listaamigos.model.entity.Contacto;
+import com.jorgelopezendrina.listaamigos.model.entity.LlamadasDeAmigo;
 import com.jorgelopezendrina.listaamigos.viewmodel.ViewModelListaAmigos;
 
 import java.util.List;

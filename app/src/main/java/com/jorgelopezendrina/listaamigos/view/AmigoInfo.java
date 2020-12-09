@@ -19,8 +19,8 @@ import android.widget.TextView;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.jorgelopezendrina.listaamigos.R;
-import com.jorgelopezendrina.listaamigos.mode.entity.Contacto;
-import com.jorgelopezendrina.listaamigos.util.validaDatos;
+import com.jorgelopezendrina.listaamigos.model.entity.Contacto;
+import com.jorgelopezendrina.listaamigos.util.ValidaDatos;
 import com.jorgelopezendrina.listaamigos.viewmodel.ViewModelListaAmigos;
 
 /**
@@ -72,7 +72,7 @@ public class AmigoInfo extends Fragment {
             @Override
             public void onClick(View v) {
                 contacto.setNombre(String.valueOf(etNombreAmigo.getText()));
-                if (validaDatos.validaFecha(String.valueOf(etCumpleanios.getText()))){
+                if (ValidaDatos.validaFecha(String.valueOf(etCumpleanios.getText()))){
                     contacto.setFecNac(String.valueOf(etCumpleanios.getText()));
                     laViewModel.update(contacto);
                     navC.navigate(R.id.ac_volverEditarBorrarAmigo);

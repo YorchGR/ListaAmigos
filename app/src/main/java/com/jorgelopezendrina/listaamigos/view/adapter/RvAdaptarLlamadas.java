@@ -8,7 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import com.jorgelopezendrina.listaamigos.R;
-import com.jorgelopezendrina.listaamigos.mode.entity.Llamada;
+import com.jorgelopezendrina.listaamigos.model.entity.Llamada;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.jorgelopezendrina.listaamigos.mode.room;
+package com.jorgelopezendrina.listaamigos.model.room;
 
 import android.content.Context;
 
@@ -6,10 +6,10 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-import com.jorgelopezendrina.listaamigos.mode.dao.ContactosDao;
-import com.jorgelopezendrina.listaamigos.mode.dao.LlamadasDao;
-import com.jorgelopezendrina.listaamigos.mode.entity.Contacto;
-import com.jorgelopezendrina.listaamigos.mode.entity.Llamada;
+import com.jorgelopezendrina.listaamigos.model.dao.ContactosDao;
+import com.jorgelopezendrina.listaamigos.model.dao.LlamadasDao;
+import com.jorgelopezendrina.listaamigos.model.entity.Contacto;
+import com.jorgelopezendrina.listaamigos.model.entity.Llamada;
 
 /**
  * Clase de la base de datos AmigosDataBase

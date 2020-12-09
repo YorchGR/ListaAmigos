@@ -9,7 +9,6 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
-import androidx.navigation.ui.NavigationUI;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -19,9 +18,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.jorgelopezendrina.listaamigos.R;
-import com.jorgelopezendrina.listaamigos.mode.entity.Llamada;
-import com.jorgelopezendrina.listaamigos.mode.entity.LlamadasDeAmigo;
-import com.jorgelopezendrina.listaamigos.view.adapter.RvAdaptarAmigos;
+import com.jorgelopezendrina.listaamigos.model.entity.Llamada;
 import com.jorgelopezendrina.listaamigos.view.adapter.RvAdaptarLlamadas;
 import com.jorgelopezendrina.listaamigos.viewmodel.ViewModelListaAmigos;
 

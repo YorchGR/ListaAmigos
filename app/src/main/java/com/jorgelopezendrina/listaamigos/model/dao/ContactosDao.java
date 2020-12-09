@@ -1,4 +1,4 @@
-package com.jorgelopezendrina.listaamigos.mode.dao;
+package com.jorgelopezendrina.listaamigos.model.dao;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -7,8 +7,8 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.jorgelopezendrina.listaamigos.mode.entity.Contacto;
-import com.jorgelopezendrina.listaamigos.mode.entity.LlamadasDeAmigo;
+import com.jorgelopezendrina.listaamigos.model.entity.Contacto;
+import com.jorgelopezendrina.listaamigos.model.entity.LlamadasDeAmigo;
 
 import java.util.List;
 

@@ -6,7 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.telephony.TelephonyManager;
 
-import com.jorgelopezendrina.listaamigos.mode.RepositorioAmigos;
+import com.jorgelopezendrina.listaamigos.model.RepositorioAmigos;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

@@ -5,7 +5,7 @@ package com.jorgelopezendrina.listaamigos.util;
  *
  * @author Jorge López Endrina.
  * */
-public class validaDatos {
+public class ValidaDatos {
 
     /**
      * Método estático que valída el formato de la fecha.

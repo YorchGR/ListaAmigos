@@ -1,12 +1,11 @@
-package com.jorgelopezendrina.listaamigos.mode.dao;
+package com.jorgelopezendrina.listaamigos.model.dao;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
 
-import com.jorgelopezendrina.listaamigos.mode.entity.Contacto;
-import com.jorgelopezendrina.listaamigos.mode.entity.Llamada;
+import com.jorgelopezendrina.listaamigos.model.entity.Llamada;
 
 import java.util.List;
 
